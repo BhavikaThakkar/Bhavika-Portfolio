@@ -15,7 +15,7 @@ function renderProject(data) {
         <header id="header" class="fixed w-full z-50 bg-black">
           <nav class="container mx-auto px-6 py-5">
             <div class="flex items-center justify-between">
-              <div class="text-2xl font-bold text-primary">
+              <div class="text-2xl font-bold text-gray-600">
                 <a href="/" class="text-[#ffffff]">Bhavika Gangadharani</a>
               </div>
 
@@ -83,7 +83,7 @@ function renderProject(data) {
       <section id="role-responsibilities" class="py-20 bg-neutral-50">
           <div class="container mx-auto px-4">
               <div class="max-w-4xl mx-auto">
-                  <h2 class="text-3xl font-bold mb-12 text-neutral-900 text-center animate__animated animate__fadeIn flex justify-center">
+                  <h2 class="text-3xl font-bold mb-12 text-gray-600 text-center animate__animated animate__fadeIn flex justify-center">
                       <svg
     width="64"
     height="64"
@@ -113,13 +113,13 @@ ${data?.position?.length ? `
 
                   <div class="grid md:grid-cols-2 gap-8">
                       <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInLeft">
-                          <h3 class="text-xl font-semibold mb-6 text-neutral-900">Key Responsibilities</h3>
+                          <h3 class="text-xl font-semibold mb-6 text-[#2D3E50]">Key Responsibilities</h3>
                           <ul class="space-y-4" id="responsibilities-list">
                           </ul>
                       </div>
 
                       <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInRight">
-                          <h3 class="text-xl font-semibold mb-6 text-neutral-900">Project Details</h3>
+                          <h3 class="text-xl font-semibold mb-6 text-[#2D3E50]">Project Details</h3>
                           <div class="space-y-4">
                               <div class="flex items-center">
                                   <div class="w-10 h-10 bg-[#F6AD55] rounded-full flex items-center justify-center mr-4">
@@ -128,8 +128,8 @@ ${data?.position?.length ? `
                                       </svg>
                                   </div>
                                   <div>
-                                      <div class="font-semibold text-neutral-900">Team Size</div>
-                                      <div class="text-neutral-700">${data.team_budget_methodology.team_size}</div>
+                                      <div class="font-semibold text-gray-600">Team Size</div>
+                                      <div class="text-gray-600">${data.team_budget_methodology.team_size}</div>
                                   </div>
                               </div>
                               
@@ -140,8 +140,8 @@ ${data?.position?.length ? `
                                       </svg>
                                   </div>
                                   <div>
-                                      <div class="font-semibold text-neutral-900">Budget</div>
-                                      <div class="text-neutral-700">${data.team_budget_methodology.budget}</div>
+                                      <div class="font-semibold text-gray-600">Budget</div>
+                                      <div class="text-gray-600">${data.team_budget_methodology.budget}</div>
                                   </div>
                               </div>
 
@@ -152,8 +152,8 @@ ${data?.position?.length ? `
                                       </svg>
                                   </div>
                                   <div>
-                                      <div class="font-semibold text-neutral-900">Methodology</div>
-                                      <div class="text-neutral-700">${data.team_budget_methodology.methodology}</div>
+                                      <div class="font-semibold text-gray-600">Methodology</div>
+                                      <div class="text-gray-600">${data.team_budget_methodology.methodology}</div>
                                   </div>
                               </div>
                           </div>
@@ -166,7 +166,7 @@ ${data?.position?.length ? `
       <section id="impact-results" class="py-20 bg-neutral-50">
           <div class="container mx-auto px-4">
               <div class="max-w-4xl mx-auto">
-                  <h2 class="text-3xl font-bold mb-12 text-neutral-900 text-center animate__animated animate__fadeIn flex justify-center">
+                  <h2 class="text-3xl font-bold mb-12 text-gray-600 text-center animate__animated animate__fadeIn flex justify-center">
                       <svg
     width="64"
     height="64"
@@ -188,13 +188,13 @@ ${data?.position?.length ? `
 
                   <div class="grid md:grid-cols-2 gap-8 mb-12">
                       <div class="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInLeft">
-                          <h3 class="text-xl font-semibold mb-6 text-neutral-900">Metrics & KPIs</h3>
+                          <h3 class="text-xl font-semibold mb-6 text-[#2D3E50]">Metrics & KPIs</h3>
                           <div class="space-y-6" id="matrix_kpi">
                           </div>
                       </div>
 
                       <div class="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInRight">
-                          <h3 class="text-xl font-semibold mb-6 text-neutral-900">Impact</h3>
+                          <h3 class="text-xl font-semibold mb-6 text-[#2D3E50]">Impact</h3>
                           <ul class="space-y-4" id="impact-list">
                           </ul>
                       </div>
@@ -258,7 +258,7 @@ ${data?.position?.length ? `
             <svg class="w-6 h-6 text-[#F6AD55] mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
             </svg>
-            <span class="text-neutral-700">${responsibility}</span>
+            <span class="text-gray-600">${responsibility}</span>
         `;
 
         ulElement.appendChild(liElement);
@@ -274,7 +274,7 @@ ${data?.position?.length ? `
         <div class="w-20 h-20 flex-shrink-0 bg-[#F6AD55] rounded-full flex items-center justify-center mr-4">
         <span class="text-2xl font-bold text-white text-center">${item.value}</span>
         </div>
-        <p class="text-neutral-700">${item.description}</p>
+        <p class="text-gray-600">${item.description}</p>
     `;
 
     matrixKpiElement.appendChild(divElement);
@@ -292,7 +292,7 @@ ${data?.position?.length ? `
         <svg class="w-6 h-6 text-[#F6AD55] mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
         </svg>
-        <span class="text-neutral-700">${impactPoint}</span>
+        <span class="text-gray-600">${impactPoint}</span>
     `;
 
     impactElement.appendChild(liElement);
