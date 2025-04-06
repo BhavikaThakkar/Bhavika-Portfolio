@@ -1,0 +1,1533 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <title>Bhavika Gangadharani</title>
+      <!-- SEO Description -->
+      <meta name="description" content="{{project.seoDescription}}">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+      
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Preconnect -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!-- Font stylesheet -->
+
+      <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  DEFAULT: '#2d2d2d',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8', 
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  DEFAULT: '#2d2d2d',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3', 
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  DEFAULT: '#2d2d2d',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3', 
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Roboto', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Roboto', 'system-ui', 'sans-serif'],
+                body: ['Roboto', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      });
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+      
+      <style>
+        h1, h2, h3, h4, h5, h6 {
+          font-family: 'Roboto', system-ui, sans-serif;
+        }
+        body {
+          font-family: 'Roboto', system-ui, sans-serif;
+        }
+      </style>
+   </head>
+   <body class="antialiased text-gray-600 min-h-screen text-base sm:text-lg">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+      title="Skip to main content"
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html>
+
+
+<div id="root">
+  <header id="header" class="fixed w-full z-50 bg-white">
+    <nav class="container mx-auto px-6 py-5">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold">
+          <a href="/" title="Bhavika Gangadharani">Bhavika Gangadharani</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="xl:hidden">
+          <button id="menu-btn" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path class="hidden" id="menu-close" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              <path class="block" id="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden xl:flex items-center space-x-6 2xl:space-x-8" id="desktop-menu">
+          <a href="#banner" class="hover:text-[#F6AD55] transition-colors duration-300" title="Home">Home</a>
+          <a title="About" href="#about" class="hover:text-[#F6AD55] transition-colors duration-300">About</a>
+          <a title="Education" href="#education" class="hover:text-[#F6AD55] transition-colors duration-300">Education</a>
+          <a title="Experiences" href="#experience" class="hover:text-[#F6AD55] transition-colors duration-300">Experiences</a>
+          <a title="projects" href="#projects" class="hover:text-[#F6AD55] transition-colors duration-300">Projects</a>
+          <a title="Testimonials" href="#testimonials" class="hover:text-[#F6AD55] transition-colors duration-300">Testimonials</a>
+          <a title="Contact" href="#contact" class="hover:text-[#F6AD55] transition-colors duration-300">Contact</a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="xl:hidden">
+        <div id="mobile-menu" class="hidden animate__animated animate__fadeIn py-4 mt-4">
+          <a href="#banner" class="block py-2 px-4 text-sm hover:bg-gray-50">Home</a>
+          <a title="About" href="#about" class="block py-2 px-4 text-sm hover:bg-gray-50">About</a>
+          <a title="Experience" href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-50">Experience</a>
+          <a title="Education" href="#education" class="block py-2 px-4 text-sm hover:bg-gray-50">Education</a>
+          <a title="Projects" href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-50">Projects</a>
+          <a title="Testimonials" href="#testimonials" class="block py-2 px-4 text-sm hover:bg-gray-50">Testimonials</a>
+          <a title="Achievements" href="#achievements" class="block py-2 px-4 text-sm hover:bg-gray-50">Achievements</a>
+          <a title="Gallery" href="#gallery" class="block py-2 px-4 text-sm hover:bg-gray-50">Gallery</a>
+          <a title="Contact" href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-50">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-20 bg-white" id="banner">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col items-center text-center">
+        <h1 class="text-3xl md:text-6xl font-bold text-primary mb-12 animate__animated animate__fadeInDown">
+          Where Strategy Meets Execution—
+          Your IT Partner for Success
+        </h1>
+        <p class="text-xl text-primary mb-8 max-w-2xl animate__animated animate__fadeInUp">
+          Ready to turn your vision into reality?  Let’s make your success story the next chapter.
+        </p>
+        <a href="assets/Bhavika Gangadharani_IT Project Manager_Resume.pdf" 
+          download="assets/Bhavika Gangadharani_IT Project Manager_Resume.pdf" 
+          role="button" 
+          target="_blank"
+          class="bg-[#F6AD55] text-neutral-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] transition-colors duration-300 animate__animated animate__fadeInUp">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuOpen = document.getElementById('menu-open');
+const menuClose = document.getElementById('menu-close');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  menuOpen.classList.toggle('hidden');
+  menuClose.classList.toggle('hidden');
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+    mobileMenu.classList.add('hidden');
+    menuOpen.classList.remove('hidden');
+    menuClose.classList.add('hidden');
+  }
+});
+
+// Add scroll event listener for header shadow
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  if (window.scrollY > 0) {
+    header.classList.add('shadow-md');
+    header.classList.add('!bg-black');
+    header.classList.add('!text-white');
+  } else {
+    header.classList.remove('shadow-md');
+    header.classList.remove('!bg-black');
+    header.classList.remove('!text-white');
+  }
+});
+</script>
+
+
+  <section id="hero" class="pt-28 md:pt-36 pb-20 bg-black ">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="animate__animated animate__fadeInLeft">
+          <h1 class="text-3xl md:text-6xl font-bold text-white mb-6">
+            Project Management <span class="text-[#F6AD55]">Excellence</span>
+          </h1>
+          <p class="text-base sm:text-lg text-[#ffffff] mb-8">
+            I’m Bhavika, Your Partner in Project Success
+ As an IT Project Manager, my passion lies in creating meaningful results. I love turning complex 
+challenges into seamless, efficient solutions while empowering teams to achieve their best work. 
+With a keen eye for detail and a heart for collaboration, I ensure projects not only meet their goals 
+but exceed expectations.
+          </p>
+          <div class="flex flex-wrap gap-4">  
+            <a href="#about" class="bg-transparent text-[#F6AD55] border-2 border-[#F6AD55] px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] hover:text-neutral-900 transition-colors">
+              Why Bhavika ?
+            </a>
+          </div>
+          <!-- <div class="mt-12 grid grid-cols-3 gap-8">
+            <div class="text-center">
+              <h3 class="text-3xl font-bold text-[#ffffff]">10+</h3>
+              <p class="text-white">Years Experience</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-3xl font-bold text-[#ffffff]">50+</h3>
+              <p class="text-white">Projects Completed</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-3xl font-bold text-[#ffffff]">95%</h3>
+              <p class="text-white">Success Rate</p>
+            </div>
+          </div> -->
+        </div>
+        <div class="relative animate__animated animate__fadeInRight">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Ripple Effect -->
+              <circle cx="50" cy="50" r="30" fill="none" stroke="#F6AD55" stroke-width="2">
+                <animate attributeName="r" from="30" to="45" dur="1.5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" from="1" to="0" dur="1.5s" repeatCount="indefinite"/>
+              </circle>
+            
+              <circle cx="50" cy="50" r="30" fill="none" stroke="#F6AD55" stroke-width="2">
+                <animate attributeName="r" from="30" to="45" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" from="1" to="0" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+              </circle>
+            
+              <!-- Inner Circle -->
+              <circle cx="50" cy="50" r="25" fill="#F6AD55" stroke="white" stroke-width="2"/>
+            
+              <!-- Play Button -->
+              <polygon points="42,35 42,65 65,50" fill="white">
+                <animate attributeName="transform" type="scale" values="1;1.1;1" dur="0.8s" repeatCount="indefinite"/>
+              </polygon>
+            </svg>
+            
+          </div>
+          <div class="w-full h-[400px] sm:h-[500px] bg-[#ECF0F1] rounded-2xl flex items-center justify-center">
+            <div class="text-6xl text-[#ffffff]">
+              <!-- <i class="fas fa-user-tie"></i> -->
+            </div>
+            <iframe width="420" height="315" class="h-full w-full"
+src="https://www.youtube.com/embed/Q76k1feCP6w">
+</iframe>
+          </div>
+          <!-- <div class="flex justify-center">
+            <div class="relative bg-white p-6 rounded-xl shadow-lg inline-block">
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 rounded-full bg-[#F6AD55]"></div>
+                <p class="font-semibold text-gray-600">Currently Available for New Projects</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Bhavika's Expertise</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div class="space-y-6 animate__animated animate__fadeInLeft">
+          <p class="text-base sm:text-lg text-gray-600">
+            I’m deeply passionate about project management because it allows me to align cutting
+            edge 
+            technology with real business goals, driving meaningful outcomes. Throughout my career, I’ve had 
+            the privilege of working on diverse initiatives—
+             complex system integrations—
+             from launching innovative products to leading 
+            and what drives me the most is ensuring every project is executed 
+            seamlessly.
+          </p>
+          <p class="text-base sm:text-lg text-gray-600">What truly excites me is bridging the gap between technical and business teams. It’s in this space 
+            where I thrive, fostering collaboration and clear communication to keep all stakeholders aligned 
+            and engaged. My greatest satisfaction comes from seeing the pieces come together, ensuring both 
+            sides of the project feel understood and empowered. I believe that’s what creates successful, 
+            lasting results.</p>
+          
+          <div>
+            <h3 class="font-bold text-[#2D3E50] mb-2">My Philosophy</h3>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+              <p>
+                I believe that every project is ultimately about people—
+                delivering value, building trust, and fostering collaboration. My leadership style combines human
+                centric guidance with strategic 
+                foresight, ensuring that while deadlines are met, the journey creates a positive, lasting impact for 
+                every stakeholder involved. For me, it’s not just about getting the job done—
+                 it's about 
+                empowering teams, ensuring decisions are backed by data, and driving outcomes that truly 
+                matter.</p>
+                <p>At the heart of every project is a shared goal, and I make it my mission to bridge the gap between 
+                  technical solutions and business needs, ensuring seamless communication and alignment. I'm 
+                  committed to continuous improvement, learning from every project to keep pushing the 
+                  boundaries of what’s possible, creating successful outcomes that resonate long after the project 
+                  ends.</p>
+            </div>
+            
+            <!-- <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+              <h3 class="font-bold text-[#2D3E50] mb-2">Expertise</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Agile Methodologies</li>
+                <li>• Budget Management</li>
+                <li>• Process Optimization</li>
+                <li>• Change Management</li>
+              </ul>
+            </div> -->
+          </div>
+
+          <!-- <div class="flex flex-wrap gap-4">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-[#F6AD55]"></i>
+              <span class="text-gray-600">PMP Certified</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-[#F6AD55]"></i>
+              <span class="text-gray-600">Scrum Master</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check-circle text-[#F6AD55]"></i>
+              <span class="text-gray-600">Six Sigma Black Belt</span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="relative animate__animated animate__fadeInRight">
+          <div class="sm:p-8 rounded-lg bg-[#ffffff] shadow-sm">
+            <!-- <div class="grid grid-cols-2 gap-6">
+              <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h4 class="text-3xl font-bold text-[#F6AD55] mb-2">150+</h4>
+                <p class="text-gray-600">Team Members Led</p>
+              </div>
+              <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h4 class="text-3xl font-bold text-[#F6AD55] mb-2">25M+</h4>
+                <p class="text-gray-600">Budget Managed</p>
+              </div>
+              <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h4 class="text-3xl font-bold text-[#F6AD55] mb-2">98%</h4>
+                <p class="text-gray-600">Project Success</p>
+              </div>
+              <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h4 class="text-3xl font-bold text-[#F6AD55] mb-2">12+</h4>
+                <p class="text-gray-600">Industries Served</p>
+              </div>
+            </div> -->
+            <img src="assets/images/main-img-2.jpg" height="400" width="400" class="mx-auto h-[272px] w-[272px] lg:h-[400px] lg:w-[400px] object-cover object-top rounded-full" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <h3 class="font-bold text-[#2D3E50] mb-2">Fun Fact:</h3>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <p> When I’m not leading projects or tackling complex challenges, you can often find me unwinding 
+            with a cup of tea. I’m a passionate tea enthusiast and love exploring new blends and brewing 
+            techniques. Tea is my go
+            to fuel—it keeps me focused, energized, and ready to take on whatever  challenges the day brings!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Education & Qualifications</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
+        <!-- Education Cards -->
+        <div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInLeft">
+          <div class="flex flex-col lg:flex-row items-start justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[#2D3E50] mb-1 lg:mb-4">Bachelor’s of Engineering/ Computer Engineering </h3>
+              <p class="text-[#F6AD55]">Gujarat Technological University, India</p>
+            </div>
+            <span class="text-gray-500 flex-shrink-0">2013 – 2017</span>
+          </div>
+          <!-- <ul class="text-gray-600 space-y-2">
+            <li>• Specialization in Project Management</li>
+            <li>• GPA: 3.9/4.0</li>
+            <li>• Research Focus: Digital Transformation</li>
+          </ul> -->
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInRight">
+          <div class="flex flex-col lg:flex-row items-start justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[#2D3E50] mb-1 lg:mb-4">Postgraduate Certificate Program / Information Technology Business Analysis</h3>
+              <p class="text-[#F6AD55]">Conestoga College, Kitchener, Canada</p>
+            </div>
+            <span class="text-gray-500 flex-shrink-0">2023 – 2024</span>
+          </div>
+          <!-- <ul class="text-gray-600 space-y-2">
+            <li>• Major in Industrial Engineering</li>
+            <li>• Minor in Computer Science</li>
+            <li>• Dean's List: All Semesters</li>
+          </ul> -->
+        </div>
+
+        <!-- Professional Certifications -->
+        <div class="md:col-span-2 mt-12">
+          <h3 class="text-2xl font-bold text-[#2D3E50] mb-8 text-center animate__animated animate__fadeIn">Professional Certifications</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+              <!-- <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mx-auto mb-4">
+                <i class="fas fa-certificate text-[#F6AD55] text-2xl"></i>
+              </div> -->
+              <img src="assets/images/pmp-certificate.png" height="100" width="100" class="mx-auto mb-4" />
+              <h4 class="text-lg font-semibold text-[#2D3E50] text-center mb-2"> Project Management Professional PMP®</h4>
+              <!-- <p class="text-gray-600 text-center">Project Management Institute</p> -->
+              <!-- <p class="text-sm text-gray-500 text-center mt-2">Certified August 2024</p> -->
+            </div>
+
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+              <!-- <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mx-auto mb-4">
+                <i class="fas fa-award text-[#F6AD55] text-2xl"></i>
+              </div> -->
+              <img src="assets/images/seal-csm.png" height="100" width="100" class="mx-auto mb-4" />
+              <h4 class="text-lg font-semibold text-[#2D3E50] text-center mb-2">Certified Scrum Master CSM®</h4>
+              <!-- <p class="text-gray-600 text-center">Scrum Alliance</p> -->
+              <!-- <p class="text-sm text-gray-500 text-center mt-2">Certified April 2024 </p> -->
+            </div>
+
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+              <!-- <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mx-auto mb-4">
+                <i class="fas fa-medal text-[#F6AD55] text-2xl"></i>
+              </div> -->
+              <img src="assets/images/seal-cspo.png" height="100" width="100" class="mx-auto mb-4" />
+              <h4 class="text-lg font-semibold text-[#2D3E50] text-center mb-2">Certified Scrum Product Owner CSPO®</h4>
+              <!-- <p class="text-gray-600 text-center">ASQ</p> -->
+              <!-- <p class="text-sm text-gray-500 text-center mt-2">Certified April 2024</p> -->
+            </div>
+
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+              <!-- <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mx-auto mb-4">
+                <i class="fas fa-medal text-[#F6AD55] text-2xl"></i>
+              </div> -->
+              <img src="assets/images/genAI-certificate.png" height="100" width="100" class="mx-auto mb-4" />
+              <h4 class="text-lg font-semibold text-[#2D3E50] text-center mb-2"> Generative AI Overview for Project Mangers</h4>
+              <p class="text-gray-600 text-center">Project Management Institute-PMI</p>
+              <!-- <p class="text-sm text-gray-500 text-center mt-2">Certified March 2024</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="experience" class="py-20 bg-black">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Work Experience</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-600"></div>
+
+          <!-- Experience Items -->
+          <div class="grid grid-cols-1 gap-12">
+            <!-- Item 1 -->
+            <div class="relative flex items-center justify-between animate__animated animate__fadeInLeft">
+              <div class="w-5/12 pr-8 text-right">
+                <h3 class="text-xl font-bold text-white">IT Consultant</h3>
+                <p class="text-[#F6AD55] font-semibold">National Dairy Development Board-(India’s Govt. Org), India</p>
+                <p class="text-white">Apr 2022 - Dec 2022</p>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#F6AD55] rounded-full border-4 border-gray-800 z-10"></div>
+              <div class="w-5/12 pl-8">
+                <ul class="text-white space-y-2">
+                  <li>• Led cross-functional teams of 20+ members</li>
+                  <li>• Managed $5M+ project portfolios</li>
+                  <li>• Achieved 30% improvement in delivery times</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="relative flex items-center justify-between animate__animated animate__fadeInRight">
+              <div class="w-5/12 pr-8 text-right">
+                <h3 class="text-xl font-bold text-white">IT Project Manager</h3>
+                <p class="text-[#F6AD55] font-semibold">Bluebell CompuServe Pvt. Ltd., India</p>
+                <p class="text-white">Jun 2017 – Mar 2022</p>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#F6AD55] rounded-full border-4 border-gray-800 z-10"></div>
+              <div class="w-5/12 pl-8">
+                <ul class="text-white space-y-2">
+                  <li>• Supervised 10 concurrent projects</li>
+                  <li>• Implemented Agile methodologies</li>
+                  <li>• Reduced project costs by 25%</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <!-- <div 
+              <div class="w-5/12 pr-8 text-right">
+                <h3 class="text-xl font-bold text-">Assistant Project Manager</h3>
+                <p class="text-[#F6AD55] font-semibold">Global Systems Ltd</p>
+                <p class="text-gray-600">2015 - 2017</p>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#F6AD55] rounded-full border-4 border-gray-800 z-10"></div>
+              <div class="w-5/12 pl-8">
+                <ul class="text-gray-600 space-y-2">
+                  <li>• Coordinated with stakeholders</li>
+                  <li>• Developed project schedules</li>
+                  <li>• Managed resource allocation</li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <!-- <div class="mt-20 animate__animated animate__fadeIn">
+          <h3 class="text-2xl font-bold text-[#2D3E50] mb-8 text-center">Core Competencies</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-black p-4 rounded-lg text-center">
+              <div class="text-[#F6AD55] text-xl mb-2">95%</div>
+              <div class="text-white">Project Planning</div>
+            </div>
+            <div class="bg-black p-4 rounded-lg text-center">
+              <div class="text-[#F6AD55] text-xl mb-2">90%</div>
+              <div class="text-white">Risk Management</div>
+            </div>
+            <div class="bg-black p-4 rounded-lg text-center">
+              <div class="text-[#F6AD55] text-xl mb-2">88%</div>
+              <div class="text-white">Agile Methods</div>
+            </div>
+            <div class="bg-black p-4 rounded-lg text-center">
+              <div class="text-[#F6AD55] text-xl mb-2">92%</div>
+              <div class="text-white">Team Leadership</div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Projects & Publications</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <!-- <div class="flex flex-wrap justify-center gap-4 mb-12 animate__animated animate__fadeIn">
+        <button class="filter-btn active bg-[#F6AD55] text-neutral-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] transition-colors duration-300">
+          All Projects
+        </button>
+        <button class="filter-btn bg-transparent text-[#000000] border-2 border-[#F6AD55] px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] hover:text-neutral-900 transition-colors">
+          Technology
+        </button>
+        <button class="filter-btn bg-transparent text-[#000000] border-2 border-[#F6AD55] px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] hover:text-neutral-900 transition-colors">
+          Infrastructure
+        </button>
+        <button class="filter-btn bg-transparent text-[#000000] border-2 border-[#F6AD55] px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] hover:text-neutral-900 transition-colors">
+          Publications
+        </button>
+      </div> -->
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+          <img src="./assets/images/dummy-img.png" height="350" width="475" class="w-full object-cover h-[350px]" />
+          <div class="p-6">
+            <!-- <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full">Farmimg</span>
+              <span class="text-gray-500">TCS</span>
+            </div> -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full">Empowering Communities and Improving Livelihoods</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#2D3E50] mb-3">Call Centre System Redesign and Migration
+            </h3>
+            <!-- <p class="text-gray-600 mb-4"> Making a real difference in the lives of rural farmers by ensuring the health and productivity of 
+              their animals, which are their livelihood. </p> -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Budget:</span>
+                <span class="text-[#2D3E50] font-semibold">$150K</span>
+              </div>
+              <a title="Learn More" class="text-[#F6AD55] hover:text-[#2D3E50] transition-colors" title="Learn More" href="projects/project-1.html">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <!-- <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full">Empowering Communities and Improving Livelihoods</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#2D3E50] mb-3">Dairy Management System</h3>
+            <p class="text-gray-600 mb-4">Being a part of something bigger that directly impacted the livelihoods of dairy farmers, 
+              helping them earn more by reducing waste and improving the efficiency of their hard work, 
+              felt deeply rewarding.</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Budget:</span>
+                <span class="text-[#2D3E50] font-semibold">$200K</span>
+              </div>
+              <a title="Learn More" class="text-[#F6AD55] hover:text-[#2D3E50] transition-colors" href="projects/project-2.html">Learn More →</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project Card 3 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <img src="./assets/images/dummy-img.png" height="350" width="475" class="w-full object-cover h-[350px]" />
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full">Bridging Communication Gaps and Strengthening 
+                Connectivity</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#2D3E50] mb-3">Banas Dairy Website & Radio App Development</h3>
+            <!-- <p class="text-gray-600 mb-4"> Empowering rural milk producers with access to information that they wouldn’t otherwise have had, 
+              ensuring they could stay informed about the very industry that sustained their families.</p> -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Budget:</span>
+                <span class="text-[#2D3E50] font-semibold">$250K</span>
+              </div>
+              <a title="Learn More" class="text-[#F6AD55] hover:text-[#2D3E50] transition-colors" href="projects/project-3.html">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <!-- <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full"> Championing Innovation and Efficiency in Industries</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#2D3E50] mb-3"> Cattle Feed Order Booking System</h3>
+            <p class="text-gray-600 mb-4">Knowing that we were transforming the way rural communities worked, making their day-to-day 
+              tasks easier and more efficient.</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Budget:</span>
+                <span class="text-[#2D3E50] font-semibold">$150K</span>
+              </div>
+              <a title="Learn More" class="text-[#F6AD55] hover:text-[#2D3E50] transition-colors" href="projects/project-4.html">Learn More →</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project Card 5 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <img src="./assets/images/dummy-img.png" height="350" width="475" class="w-full object-cover h-[350px]" />
+
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full">Championing Innovation and Efficiency in Industries</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#2D3E50] mb-3"> Asset Management System</h3>
+            <!-- <p class="text-gray-600 mb-4">The sense of accomplishment in creating a system that helped an organization manage its assets 
+              more efficiently, which not only improved production but safeguarded jobs and ensured a more 
+              secure future for the workforce</p> -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Budget:</span>
+                <span class="text-[#2D3E50] font-semibold">$200K</span>
+              </div>
+              <a title="Learn More" class="text-[#F6AD55] hover:text-[#2D3E50] transition-colors" href="projects/project-5.html">Learn More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <img src="./assets/images/dummy-img.png" height="350" width="475" class="w-full object-cover h-[350px]" />
+
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-[#F6AD55] text-white text-sm px-3 py-1 rounded-full flex-shrink-0 "> Safeguarding the Future Through Technology</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#2D3E50] mb-3"> National Digital Livestock Mission Testing</h3>
+            <!-- <p class="text-gray-600 mb-4"> Farmers often form deep bonds with their livestock, and this project helped them care for 
+              their animals with confidence and compassion.</p> -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Budget:</span>
+                <span class="text-[#2D3E50] font-semibold">$16.5M</span>
+              </div>
+              <a title="Learn More" class="text-[#F6AD55] hover:text-[#2D3E50] transition-colors" href="projects/project-6.html">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <!-- <div class="text-center mt-12">
+        <button class="bg-[#2D3E50] text-white px-8 py-3 rounded-full hover:bg-[#F6AD55] transition-colors duration-300 animate__animated animate__fadeIn">
+          Load More Projects
+        </button>
+      </div> -->
+    </div>
+  </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.classList.remove('bg-[#2D3E50]');
+                b.classList.remove('text-white');
+                b.classList.add('bg-gray-200');
+                b.classList.add('text-gray-700');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            this.classList.add('bg-[#2D3E50]');
+            this.classList.add('text-white');
+            this.classList.remove('bg-gray-200');
+            this.classList.remove('text-gray-700');
+        });
+    });
+});
+</script>
+
+
+  <section id="testimonials" class="py-20 overflow-hidden relative">
+    <div class="container mx-auto px-6 pb-8 relative">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Reviews & Testimonials</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="swiper-container testimonial-slider overflow-hidden py-4">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide !h-auto">
+            <div class="bg-white rounded-xl p-4 sm:p-8 shadow-lg mx-4 mb-8 h-full">
+              <div class="flex items-center mb-6">
+                <div>
+                <div class="w-16 h-16 bg-[#ECF0F1] rounded-full flex items-center justify-center">
+                  <i class="fas fa-user text-[#2D3E50] text-2xl"></i>
+                </div>
+              </div>
+                <div class="ml-4">
+                  <h4 class="text-xl font-bold text-[#2D3E50]">Mohit Rathod</h4>
+                  <p class="text-[#F6AD55]"> Assistant Professor</p>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">" I had the pleasure of teaching Bhavika Gangadharani in computer engineering, and I'm 
+                thrilled to endorse her for outstanding dedication to the field. With over six years of 
+                experience in the IT sector, Bhavika has demonstrated a remarkable commitment to 
+                her craft. As a studious student, she consistently excelled, achieving impressive 
+                milestones during her final semesters. Her recent certifications in CSM and CSPO 
+                further illustrate her passion for continuous learning and professional growth. I highly 
+                recommend Bhavika for any role in the IT industry, knowing she will bring expertise, 
+                enthusiasm, and a drive for excellence to any team she join."</p>
+              <!-- <div class="flex text-[#F6AD55]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide !h-auto">
+            <div class="bg-white rounded-xl p-4 sm:p-8 shadow-lg mx-4 mb-8 h-full">
+              <div class="flex items-center mb-6">
+                <div>
+                <div class="w-16 h-16 bg-[#ECF0F1] rounded-full flex items-center justify-center">
+                  <i class="fas fa-user text-[#2D3E50] text-2xl"></i>
+                </div>
+              </div>
+                <div class="ml-4">
+                  <h4 class="text-xl font-bold text-[#2D3E50]">Charmy Gajera</h4>
+                  <p class="text-[#F6AD55]">Project Lead | Salesforce Marketer<small> BugendaiTech Australia</small></p>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">" During my time working on a Project with Bhavika, she was responsible for managing the project 
+                end-to-end along with the Team Members, providing effective solutions, and maintaining the 
+                project documentation. I appreciate her communication skills, especially her fluent and professional 
+                tone. Her punctuality in delivering the work impressed me a lot. 
+                It was great working with you, Bhavika"</p>
+              <!-- <div class="flex text-[#F6AD55]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> -->
+                <!-- <i class="fas fa-star-half-alt"></i> -->
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide !h-auto">
+            <div class="bg-white rounded-xl p-4 sm:p-8 shadow-lg mx-4 mb-8 h-full">
+              <div class="flex items-center mb-6">
+                <div>
+                <div class="w-16 h-16 bg-[#ECF0F1] rounded-full flex items-center justify-center">
+                  <i class="fas fa-user text-[#2D3E50] text-2xl"></i>
+                </div>
+              </div>
+                <div class="ml-4">
+                  <h4 class="text-xl font-bold text-[#2D3E50]"> Nagaraju Kasturi</h4>
+                  <p class="text-[#F6AD55]"> Technical Specialist- HCL Tech, Canada</p>
+                </div>
+              </div>
+              <p class="text-gray-600 mb-6">" It has been a pleasure to collaborate with Bhavika Gangadharani, whose expertise in Agile methodologies 
+                and project management is nothing short of inspiring. As a Certified Scrum Master and Product 
+                Owner, Bhavika has demonstrated exceptional leadership in steering our project teams towards 
+                success. Her ability to nurture team dynamics while ensuring project deliverables are met is 
+                commendable. Bhavika’s passion for fostering a collaborative work environment and her strategic 
+                vision in handling complex projects have significantly contributed to our team’s achievements. Any 
+                organization would be fortunate to have Bhavika as a part of their team due to her dedication and 
+                proficiency in IT and Agile project management."</p>
+              <!-- <div class="flex text-[#F6AD55]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <!-- <div class="swiper-button-next text-[#F6AD55]"></div>
+        <div class="swiper-button-prev text-[#F6AD55]"></div> -->
+        <!-- Pagination -->
+         <style>
+            #header.shadow-md #menu-btn {
+              color: #ffffff !important;
+            }
+            .testimonial-slider .swiper-pagination {
+              bottom: 0;
+            }
+            .testimonial-slider .swiper-pagination-bullet-active {
+              background-color: #F6AD55;
+            }
+          </style>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+<script>
+const testimonialSlider = new Swiper('.testimonial-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    }
+  },
+});
+</script>
+
+
+  <!-- <section id="achievements" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Professional Achievements</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-300 animate__animated animate__fadeInUp">
+          <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mb-6 mx-auto">
+            <i class="fas fa-handshake text-[#F6AD55] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#2D3E50] text-center mb-4">Key Collaborations</h3>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-[#F6AD55]"></i>
+              <span class="text-gray-600">Strategic partnership with Fortune 500 companies</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-[#F6AD55]"></i>
+              <span class="text-gray-600">Cross-functional team leadership</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-check-circle text-[#F6AD55]"></i>
+              <span class="text-gray-600">International project coordination</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+          <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mb-6 mx-auto">
+            <i class="fas fa-microphone-alt text-[#F6AD55] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#2D3E50] text-center mb-4">Speaking Engagements</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-white rounded-lg">
+              <h4 class="font-semibold text-[#2D3E50]">PMI Global Conference 2023</h4>
+              <p class="text-gray-600">Keynote Speaker</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg">
+              <h4 class="font-semibold text-[#2D3E50]">Tech Summit 2022</h4>
+              <p class="text-gray-600">Panel Moderator</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg">
+              <h4 class="font-semibold text-[#2D3E50]">Agile Conference 2022</h4>
+              <p class="text-gray-600">Featured Speaker</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+          <div class="flex items-center justify-center w-16 h-16 bg-[#ECF0F1] rounded-full mb-6 mx-auto">
+            <i class="fas fa-users text-[#F6AD55] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#2D3E50] text-center mb-4">Leadership Impact</h3>
+          <div class="space-y-6">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Team Members Mentored</span>
+              <span class="font-bold text-[#F6AD55]">50+</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Leadership Positions</span>
+              <span class="font-bold text-[#F6AD55]">12</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-600">Success Rate</span>
+              <span class="font-bold text-[#F6AD55]">95%</span>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h4 class="font-semibold text-[#2D3E50] mb-2">Current Positions:</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Board Member, PMI Chapter</li>
+                <li>• Advisory Board, Tech Startups</li>
+                <li>• Mentor, Leadership Program</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 animate__animated animate__fadeIn">
+        <h3 class="text-2xl font-bold text-[#2D3E50] text-center mb-8">Recognition Timeline</h3>
+        <div class="relative">
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#ECF0F1]"></div>
+          <div class="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
+            <div class="flex items-center">
+              <div class="w-1/2 pr-8 text-right">
+                <h4 class="font-bold text-[#2D3E50]">Excellence in Leadership</h4>
+                <p class="text-[#F6AD55]">2023</p>
+              </div>
+              <div class="w-4 h-4 bg-[#F6AD55] rounded-full relative z-10"></div>
+              <div class="w-1/2 pl-8">
+                <p class="text-gray-600">PMI Leadership Award</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-1/2 pr-8 text-right">
+                <p class="text-gray-600">Best Project Manager</p>
+              </div>
+              <div class="w-4 h-4 bg-[#F6AD55] rounded-full relative z-10"></div>
+              <div class="w-1/2 pl-8">
+                <h4 class="font-bold text-[#2D3E50]">Industry Recognition</h4>
+                <p class="text-[#F6AD55]">2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- <section id="gallery" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Gallery</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="filter-btn active px-6 py-2 rounded-full bg-[#2D3E50] text-white hover:bg-[#F6AD55] transition-colors">
+          All
+        </button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#F6AD55] hover:text-white transition-colors">
+          Events
+        </button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#F6AD55] hover:text-white transition-colors">
+          Conferences
+        </button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-[#F6AD55] hover:text-white transition-colors">
+          Workshops
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="gallery-item group animate__animated animate__fadeIn">
+          <div class="relative overflow-hidden rounded-lg bg-[#ECF0F1] h-64 flex items-center justify-center">
+            <div class="text-6xl text-[#2D3E50]">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="absolute inset-0 bg-[#2D3E50] bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="text-white text-center p-4">
+                <h3 class="text-lg font-bold mb-2">Leadership Summit 2023</h3>
+                <p class="text-sm">Keynote Speaker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group animate__animated animate__fadeIn">
+          <div class="relative overflow-hidden rounded-lg bg-[#ECF0F1] h-64 flex items-center justify-center">
+            <div class="text-6xl text-[#2D3E50]">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="absolute inset-0 bg-[#2D3E50] bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="text-white text-center p-4">
+                <h3 class="text-lg font-bold mb-2">Project Management Workshop</h3>
+                <p class="text-sm">Training Session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group animate__animated animate__fadeIn">
+          <div class="relative overflow-hidden rounded-lg bg-[#ECF0F1] h-64 flex items-center justify-center">
+            <div class="text-6xl text-[#2D3E50]">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="absolute inset-0 bg-[#2D3E50] bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="text-white text-center p-4">
+                <h3 class="text-lg font-bold mb-2">Excellence Awards 2023</h3>
+                <p class="text-sm">Award Ceremony</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group animate__animated animate__fadeIn">
+          <div class="relative overflow-hidden rounded-lg bg-[#ECF0F1] h-64 flex items-center justify-center">
+            <div class="text-6xl text-[#2D3E50]">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="absolute inset-0 bg-[#2D3E50] bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="text-white text-center p-4">
+                <h3 class="text-lg font-bold mb-2">Tech Conference 2023</h3>
+                <p class="text-sm">Panel Discussion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group animate__animated animate__fadeIn">
+          <div class="relative overflow-hidden rounded-lg bg-[#ECF0F1] h-64 flex items-center justify-center">
+            <div class="text-6xl text-[#2D3E50]">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="absolute inset-0 bg-[#2D3E50] bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="text-white text-center p-4">
+                <h3 class="text-lg font-bold mb-2">Global Partnership Summit</h3>
+                <p class="text-sm">Collaboration Event</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group animate__animated animate__fadeIn">
+          <div class="relative overflow-hidden rounded-lg bg-[#ECF0F1] h-64 flex items-center justify-center">
+            <div class="text-6xl text-[#2D3E50]">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="absolute inset-0 bg-[#2D3E50] bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div class="text-white text-center p-4">
+                <h3 class="text-lg font-bold mb-2">Mentorship Program</h3>
+                <p class="text-sm">Graduation Ceremony</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="bg-[#2D3E50] text-white px-8 py-3 rounded-full hover:bg-[#F6AD55] transition-colors duration-300">
+          Load More
+        </button>
+      </div>
+    </div>
+  </section> -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => {
+                b.classList.remove('active', 'bg-[#2D3E50]', 'text-white');
+                b.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            this.classList.add('active', 'bg-[#2D3E50]', 'text-white');
+            this.classList.remove('bg-gray-200', 'text-gray-700');
+        });
+    });
+});
+</script>
+
+
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl sm:text-4xl font-bold text-[#2D3E50] mb-4">Get In Touch</h2>
+        <div class="w-20 h-1 bg-[#F6AD55] mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Information -->
+        <div class="space-y-8 animate__animated animate__fadeInLeft">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold text-[#2D3E50] mb-6">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-[#ECF0F1] rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-envelope text-[#F6AD55]"></i>
+                </div>
+                <div style="word-break: break-word;">
+                  <p class="text-gray-600">Email</p>
+                  <a href="mailto:b.gangadharani1996@gmail.com" class="text-[#2D3E50] font-semibold hover:text-[#F6AD55]">b.gangadharani1996@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-[#ECF0F1] rounded-full flex items-center justify-center">
+                  <i class="fas fa-phone text-[#F6AD55]"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600">Phone</p>
+                  <a href="tel:+16479398537" class="text-[#2D3E50] font-semibold hover:text-[#F6AD55]"> +1-(647)-939-8537</a>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-[#ECF0F1] rounded-full flex items-center justify-center">
+                  <i class="fas fa-map-marker-alt text-[#F6AD55]"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600">Location</p>
+                  <p class="text-[#2D3E50] font-semibold">Waterloo, ON
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="text-lg font-semibold text-[#2D3E50] mb-4">Connect With Me</h4>
+              <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/bhavika-thakkar/" target="_blank" class="w-10 h-10 bg-[#2D3E50] text-white rounded-full flex items-center justify-center hover:bg-[#F6AD55] transition-colors">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-gray-50 p-8 rounded-lg animate__animated animate__fadeInRight">
+          <form id="contactForm" class="space-y-6" action="https://formbold.com/s/6r7yk"
+          method="POST">
+            <div>
+              <label for="name" class="block text-[#2D3E50] font-medium mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#F6AD55]" required>
+            </div>
+            <div>
+              <label for="email" class="block text-[#2D3E50] font-medium mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#F6AD55]" required>
+            </div>
+            <div>
+              <label for="subject" class="block text-[#2D3E50] font-medium mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#F6AD55]" required>
+            </div>
+            <div>
+              <label for="message" class="block text-[#2D3E50] font-medium mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#F6AD55]" required></textarea>
+            </div>
+            <button type="submit" class="bg-[#F6AD55] text-neutral-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#F6AD55] transition-colors duration-300 w-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Add form submission logic here
+    alert('Thank you for your message! I will get back to you soon.');
+    this.reset();
+});
+</script> -->
+
+
+  <footer id="footer" class="bg-neutral-900 text-white py-12 pb-24">
+    <div class="container mx-auto px-6">
+      <div>
+        <!-- About Section -->
+        <!-- <div class="space-y-4">
+          <h3 class="text-2xl font-bold mb-4">Bhavika Gangadharani</h3>
+          <p class="text-gray-400">Professional Project Manager with expertise in digital transformation and strategic leadership.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div> -->
+
+        <!-- Quick Links -->
+        <!-- <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#banner" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-[#F6AD55] transition-colors">About</a>
+            </li>
+            <li>
+              <a href="#experience" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Experience</a>
+            </li>
+            <li>
+              <a href="#education" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Education</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Projects</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Testimonials</a>
+            </li>
+            <li>
+              <a href="#achievements" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Achievements</a>
+            </li>
+            <li>
+              <a href="#gallery" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- Services -->
+        <!-- <div>
+          <h4 class="text-lg font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Project Management</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Strategic Consulting</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Team Leadership</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors">Digital Transformation</a>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-center md:text-left">Contact Info</h4>
+          <ul class="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row">
+            <li class="flex items-center justify-center space-x-3">
+              <i class="fas fa-envelope text-[#F6AD55]"></i>
+              <a href="mailto:b.gangadharani1996@gmail.com" title="b.gangadharani1996@gmail.com" class="text-gray-400 hover:text-[#F6AD55] transition-colors">b.gangadharani1996@gmail.com</a>
+            </li>
+            <li class="flex items-center justify-center space-x-3">
+              <i class="fas fa-phone text-[#F6AD55]"></i>
+              <a href="tel:Contact no :+16479398537" class="text-gray-400 hover:text-[#F6AD55] transition-colors" title="+1-(647)-939-8537">Contact no : +1-(647)-939-8537</a>
+            </li>
+            <li class="flex items-center justify-center space-x-3">
+              <i class="fas fa-map-marker-alt text-[#F6AD55]"></i>
+              <span class="text-gray-400">Waterloo, ON</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-gray-800 my-8">
+
+      <!-- Bottom Footer -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          &copy;  Bhavika Gangadharani. All rights reserved.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <p class="text-gray-400 hover:text-[#F6AD55] transition-colors text-sm">Bhavika Gangadharani - Project Manager</p>
+          <!-- <a href="/privacy" class="text-gray-400 hover:text-[#F6AD55] transition-colors text-sm">
+            Privacy Policy
+          </a>
+          <a href="/terms" class="text-gray-400 hover:text-[#F6AD55] transition-colors text-sm">
+            Terms of Use
+          </a>
+          <a href="#contact" class="text-gray-400 hover:text-[#F6AD55] transition-colors text-sm">
+            Contact
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors text-sm">
+            LinkedIn
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#F6AD55] transition-colors text-sm">
+            Twitter
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-[#F6AD55] text-white w-12 h-12 rounded-full hidden items-center justify-center hover:bg-[#2D3E50] transition-colors z-50">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </footer>
+<script>
+// Scroll to Top functionality
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    scrollToTopBtn.classList.remove('hidden');
+    scrollToTopBtn.classList.add('flex');
+  } else {
+    scrollToTopBtn.classList.remove('flex');
+    scrollToTopBtn.classList.add('hidden');
+  }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Current Year
+document.querySelector('.currentYear').textContent = new Date().getFullYear();
+</script></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          

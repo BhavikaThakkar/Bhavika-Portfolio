@@ -1,0 +1,22 @@
+{
+  "title": "Banas Dairy Website & Radio App Development",
+  "description": "Providing rural milk producers with access to industry-related information.",
+  "position": "",
+  "key_responsibilities": [
+    "Led the design and development of the website and radio app.",
+    "Managed a team of 8 developers, content creators, and IT professionals.",
+    "Implemented SEO and user acquisition strategies.",
+    "Collaborated with dairy management and milk producers."
+  ],
+  "team_budget_methodology": {
+    "team_size": "8 members",
+    "budget": "$250K",
+    "methodology": "Agile (6 sprints)"
+  },
+  "impact": [
+    "Achieved 6.5 million users on the website, 30% of whom were milk producers."
+  ],
+  "metrics_kpis": [
+    { "value": "50,000", "description": "Daily active users on the radio app." }
+  ]
+}

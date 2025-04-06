@@ -1,0 +1,24 @@
+{
+  "title": "National Digital Livestock Mission Testing",
+  "description": "Farmers often form deep bonds with their livestock, and this project helped them care for their animals with confidence and compassion. The system provided hope that their animals would thrive, bringing security and pride to their work. It was more than data management—it was about ensuring the survival of a way of life.",
+  "position": "IT Consultant and Project Lead",
+  "key_responsibilities": [
+    "Led the project’s implementation from inception to completion, driving a $16.5M budget.",
+    "Managed a cross-functional team of 5-6 professionals, including IT and veterinary experts.",
+    "Coordinated with government stakeholders (NDDB, PMO Delhi) and vendor TCS to ensure the project followed an Agile-Waterfall hybrid methodology.",
+    "Designed and implemented sprint timelines, allocated resources, and communicated project progress to 120+ stakeholders."
+  ],
+  "team_budget_methodology": {
+    "team_size": "5 members",
+    "budget": "$16.5M",
+    "vendors": ["TCS"],
+    "methodology": "Agile-Waterfall hybrid"
+  },
+  "impact": [
+    "Improved livestock data accuracy by 30%, benefiting 60% of India’s livestock farmers."
+  ],
+  "metrics_kpis": [
+    { "value": "30%", "description": "Improvement in livestock data accuracy." },
+    { "value": "60%", "description": "Percentage of India's livestock farmers who benefited from the project." }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Asset Management System",
+  "description": "The sense of accomplishment in creating a system that helped an organization manage its assets more efficiently, which not only improved production but safeguarded jobs and ensured a more secure future for the workforce, felt deeply meaningful. I knew that every efficiency gained was protecting someone's livelihood.",
+  "position": "",
+  "key_responsibilities": [
+    "Led the implementation of the system.",
+    "Designed workflows for asset tracking, maintenance scheduling, and depreciation calculations.",
+    "Managed a team of 6 IT professionals and asset management specialists."
+  ],
+  "team_budget_methodology": {
+    "team_size": "6 members",
+    "budget": "$200K",
+    "methodology": "Waterfall"
+  },
+  "impact": [
+    "Reduced asset downtime by 40% and improved inventory accuracy by 30%.",
+    "Optimized maintenance schedules, leading to a 25% improvement in asset utilization."
+  ],
+  "metrics_kpis": [
+    { "value": "30%", "description": "Improvement in inventory accuracy, reducing waste and improving asset allocation." },
+    { "value": "40%", "description": "Reduction in asset downtime through better maintenance scheduling and real-time tracking." },
+    { "value": "25%", "description": "Improvement in asset utilization, ensuring equipment and machinery were used more efficiently." }
+  ]
+}

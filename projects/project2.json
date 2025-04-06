@@ -1,0 +1,23 @@
+{
+  "title": "Dairy Management System",
+  "description": "Helping dairy farmers earn more by reducing waste and improving efficiency.",
+  "position": "",
+  "key_responsibilities": [
+    "Managed the system design and implementation.",
+    "Led communication between stakeholders, IT teams, and dairy staff."
+  ],
+  "team_budget_methodology": {
+    "team_size": "5 members",
+    "budget": "$200K",
+    "methodology": "Waterfall"
+  },
+  "impact": [
+    "Improved efficiency in dairy operations, reducing waste and increasing farmers' incomes."
+  ],
+  "metrics_kpis": [
+    { "value": "20%", "description": "Decrease in production waste." },
+    { "value": "15%", "description": "Improvement in dairy operations." },
+    { "value": "10%", "description": "Increase in farmers' incomes." },
+    { "value": "5 hours", "description": "Weekly time savings for farmers." }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Call Centre System Redesign and Migration",
+  "description": "Making a real difference in the lives of rural farmers by ensuring the health and productivity of their animals, which are their livelihood.",
+  "position": "",
+  "key_responsibilities": [
+    "Led the redesign and migration process.",
+    "Coordinated with veterinary doctors and stakeholders to understand their needs.",
+    "Ensured the system integrated new features to improve service delivery.",
+    "Managed a team of 5-6 people, ensuring the project stayed within scope and timeline."
+  ],
+  "team_budget_methodology": {
+    "team_size": "6 members (IT and veterinary staff)",
+    "budget": "$150K",
+    "methodology": "Hybrid (Agile & Waterfall)"
+  },
+  "impact": ["The improved communication between farmers and veterinary doctors reduced wait times for treatment by 30%."],
+  "metrics_kpis": [
+    { "value": "30%", "description": "Reduced call response time." },
+    { "value": "20%", "description": "Improved data entry accuracy." }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Cattle Feed Order Booking System",
+  "description": "Transforming the way rural communities worked, making tasks easier and more efficient.",
+  "position": "",
+  "key_responsibilities": [
+    "Managed system design and development.",
+    "Oversaw security protocols for data access and system use.",
+    "Led a team of 7 developers and IT professionals."
+  ],
+  "team_budget_methodology": {
+    "team_size": "7 members",
+    "budget": "$150K",
+    "methodology": "Agile (5 sprints)"
+  },
+  "impact": [
+    "Reduced the time farmers spent traveling to dairy plants."
+  ],
+  "metrics_kpis": [
+    { "value": "50%", "description": "Reduction in manual processing time." },
+    { "value": "40%", "description": "Increase in order processing efficiency." },
+    { "value": "Enabled", "description": "Integration of SAP for real-time stock management." }
+  ]
+}
